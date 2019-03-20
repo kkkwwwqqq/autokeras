@@ -149,7 +149,7 @@ class Decoder(nn.Module):
         self.speaker_proj1, self.speaker_proj2 = None, None
 
         # Prenet: causal convolution blocks
-        self.preattention = nn.ModuleList()
+       
         in_channels = in_dim * r
         std_mul = 1.0
         for out_channels, kernel_size, dilation in preattention:
